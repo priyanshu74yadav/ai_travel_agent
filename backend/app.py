@@ -13,7 +13,7 @@ app = Flask(__name__)
 app.config.from_object(Config)
 
 # Enable CORS for Next.js frontend
-CORS(app)
+CORS(app,origins=["http://localhost:3000"])
 
 # Import and register routes
 from routes import health, hotels, activities, plan_trip

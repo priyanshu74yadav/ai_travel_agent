@@ -29,3 +29,4 @@ class Config:
     # Flask Configuration
     DEBUG = os.getenv("DEBUG", "true").lower() == "true"
 
+
